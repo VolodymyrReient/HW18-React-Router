@@ -1,13 +1,146 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+/* Publications Start */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post {
+  min-height: 300px;
+  padding: 0 10px;
+  background: #120a8f;
+  margin-top: 20px;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+}
+.post-wrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.info-wrapper {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-wrapper {
+  display: flex;
+  width: 310px;
+  justify-content: space-between;
+}
+.avatar {
+  cursor: pointer;
+  display: block;
+  width: 50px;
+}
+.avatar img {
+  display: block;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+.img {
+  height: 215px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.img img {
+  border-radius: 12px;
+  width: 89%;
+}
+.name {
+  color: #ffffff;
+  font-weight: bold;
+}
+.nickname,
+.date {
+  color: gray;
+}
+.descr {
+  color: #ffffff;
+  font-weight: 500;
+}
+/* Publications End */
+
+.photos {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+}
+.photos img {
+  height: 333px;
+  width: 500px;
+}
+
+/* Photos end */
+
+.wrapper-contacts {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-wrapper {
+  margin-bottom: 20px;
+  background-color: grey;
+  height: 100px;
+  width: 200px;
+}
+.name,
+.number {
+  color: aqua;
+  text-align: center;
+}
+.search {
+  margin-bottom: 20px;
+  outline-color: green;
+}
+/* Contacts end */
+.navbar-wrapper {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  background: #2d2d2d;
+}
+.navbar {
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.link:hover {
+  color: #ffcc01;
 }
