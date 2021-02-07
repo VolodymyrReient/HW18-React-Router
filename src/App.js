@@ -1,4 +1,5 @@
-import Router from "./Components/Router";
+import Router from "./Components/Router/Router";
+
 import './App.css';
 
 

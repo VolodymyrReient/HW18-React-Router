@@ -1,5 +1,7 @@
 import React, {Component} from "react";
-import Contact from "./Contact"
+
+import Contact from "./Contact";
+
 const contacts = [{
     firstName: "Барней",
     lastName: "Стинсовський",
@@ -30,6 +32,7 @@ const contacts = [{
     phone: "+380956319521",
     gender: "male"
 }];
+
 class Contacts extends Component {
 
     state = {
@@ -62,11 +65,7 @@ class Contacts extends Component {
                 {this.state.contacts.map((el,i)=><Contact firstName={el.firstName} lastName={el.lastName} number={el.phone} key={i} />)}         
             </div>
         )
-           
-
-        
     }
-
-
 }
+
 export default Contacts;

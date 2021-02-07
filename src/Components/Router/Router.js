@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, NavLink, Route} from "react-router-dom";
-import Main from "./Main";
-import MakePublication from "./makePublication";
-import Photos from "./Photos";
-import Contacts from "./Contacts"
+
+import Main from "../Main/Main";
+import MakePublication from "../Publication/makePublication";
+import Photos from "../Photos/Photos";
+import Contacts from "../Contact/Contacts"
 
 
 const Navigation = () => {
@@ -27,4 +28,5 @@ const Navigation = () => {
     )
 
 }
+
 export default Navigation;
